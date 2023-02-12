@@ -206,7 +206,7 @@ Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword
   game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
   end)
 
---Bows
+--Bows 
 
   local Main = Window:NewTab("Bows")
   local Mainsection = Main:NewSection("Buyable Bows")
@@ -230,7 +230,7 @@ Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword
   local Main = Window:NewTab("Pickaxe")
   local Mainsection = Main:NewSection("Pickaxe")
 
-  Mainsection:NewButton("Bronze Piackaxe ", "40 Gold 6 Bronze ", function()
+  Mainsection:NewButton("Bronze Pickaxe ", "40 Gold 6 Bronze ", function()
     local args = {
       [1] = "Bronze Pickaxe "
   }
@@ -238,7 +238,7 @@ Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword
   game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
   end)
 
-  Mainsection:NewButton("Iron Piackaxe ", "200 Gold 8 Iron ", function()
+  Mainsection:NewButton("Iron Pickaxe ", "200 Gold 8 Iron ", function()
     local args = {
       [1] = "Iron Pickaxe "
   }
@@ -246,7 +246,7 @@ Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword
   game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
   end)
 
-  Mainsection:NewButton("Gemstone Piackaxe ", "500 Gold Iron Pickaxe 5 Ruby 5 Emerald 5 Saphire ", function()
+  Mainsection:NewButton("Gemstone Pickaxe ", "500 Gold Iron Pickaxe 5 Ruby 5 Emerald 5 Saphire ", function()
     local args = {
       [1] = "Gemstone Pickaxe "
   }
