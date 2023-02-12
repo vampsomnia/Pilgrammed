@@ -1,0 +1,86 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("vamp hub", BloodTheme)
+
+  --Main
+  local Main = Window:NewTab("Main")
+  local Mainsection = Main:NewSection("Auto")
+
+  Mainsection:NewToggle("Toggle Auto Deposit", "Turns auto deposit on or off", function(state)
+if state then
+     _G.autoTap = true
+    while _G.autoTap == true do
+      local args = {          [1] = true,
+          [2] = 1
+      }
+      
+      game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Bank"):InvokeServer(unpack(args))
+      
+        wait()
+      end
+    else
+      _G.autoTap = false
+      while _G.autoTap == true do
+        local args = {
+          [1] = true,
+          [2] = 1
+        }
+      
+       game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Bank"):InvokeServer(unpack(args))
+      end
+  end
+end)
+
+Mainsection:NewSlider("Withdraw Money", "Withdraws money from bank", 1000, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+  local args = {
+    [1] = false,
+    [2] = 0.06939625260235947
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Bank"):InvokeServer(unpack(args))
+wait()
+end)
+
+Mainsection:NewButton("TP To Chests", "Tab To TP To Chest (Can't turn off because im retarded)", function() --Make Turn Off Later
+  local Player = game.Players.LocalPlayer
+  local UserInputService = game:GetService("UserInputService")
+  local Character = Player.Character
+  local Key = "Tab" -- change this to wtv
+  
+  while true do 
+      wait(0.2)
+      if UserInputService:IsKeyDown(Enum.KeyCode[Key]) then
+      for i,v in pairs(game.Workspace.Chests:GetDescendants()) do
+          if v.Name == "Wood" then
+             Character.HumanoidRootPart.CFrame = v.CFrame 
+          end
+      end
+      end
+  end
+end)
+--Craft
+local Main = Window:NewTab("Craft")
+local Mainsection = Main:NewSection("Ores")
+
+    Mainsection:NewToggle("Buy Bronze (2 copper 1 tin)", "Buys copper", function(state)
+  if state then
+       _G.autoTap = true
+      while _G.autoTap == true do
+        local args = {
+          [1] = "Bronze"
+      }
+      
+      game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+      
+       wait()
+    end
+  else
+    _G.autoTap = false
+    while _G.autoTap == true do
+      local args = {
+        [1] = "Bronze"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+    end
+   end
+  end)
