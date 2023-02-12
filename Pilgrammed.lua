@@ -77,14 +77,6 @@ Mainsection:NewButton("Bronze (2 Copper 1 Tin)", "Makes Bronze", function()
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
   end)
 
-  Mainsection:NewButton("Bronze Pickaxe (40 Gold 6 Bronze)", "Makes Bronze Pickaxe", function()
-    local args = {
-      [1] = "Bronze Pickaxe"
-  }
-
-  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
-end)
-
 Mainsection:NewButton("Bronze Greatsword (80 Gold 9 Bronze)", "Makes Bronze Greatsword", function()
   local args = {
     [1] = "Bronze Greatsword"
@@ -98,14 +90,6 @@ local Mainsection = Main:NewSection("Iron Items")
 Mainsection:NewButton("Iron Sword (200 Gold 8 Iron)", "Makes Iron Sword", function()
   local args = {
     [1] = "Iron Sword"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
-end)
-
-Mainsection:NewButton("Iron Pickaxe (200 Gold 8 Iron)", "Makes Iron Pickaxe", function()
-  local args = {
-    [1] = "Iron Pickaxe"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
@@ -238,6 +222,33 @@ Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword
   Mainsection:NewButton("Demetal Greatbow ", "500 Gold 12 Demetal 8 Sulfur ", function()
     local args = {
       [1] = "Demetal Greatbow "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  local Main = Window:NewTab("Pickaxe")
+  local Mainsection = Main:NewSection("Pickaxe")
+
+  Mainsection:NewButton("Bronze Piackaxe ", "40 Gold 6 Bronze ", function()
+    local args = {
+      [1] = "Bronze Pickaxe "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Iron Piackaxe ", "200 Gold 8 Iron ", function()
+    local args = {
+      [1] = "Iron Pickaxe "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Gemstone Piackaxe ", "500 Gold Iron Pickaxe 5 Ruby 5 Emerald 5 Saphire ", function()
+    local args = {
+      [1] = "Gemstone Pickaxe "
   }
 
   game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
@@ -411,4 +422,30 @@ Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword
       Mainsection:NewButton("Old Fart Button #3", "TP To Old Fart Button)", function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1400.0072021484375,836.6737670898438,4292.0546875)
       end)
+--Boss TP
+      local Main = Window:NewTab("Boss Teleport")
+    local Mainsection = Main:NewSection("Bosses")
 
+    Mainsection:NewButton("Big Iron", "TP To Big Iron Button)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(2447.100634735325,-14.500001907348633-3125.677734375)
+      end)
+
+      Mainsection:NewButton("Granny", "TP To Granny)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1397.5523681640625,23.99999237060547,-3551.662841796875)
+      end)
+
+      Mainsection:NewButton("Ice King", "TP To Ice King)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1364.26220703125,463.9999084472656,209.8992319921875)
+      end)
+
+      Mainsection:NewButton("Prism Golem", "TP To Prism Golem)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(716.32861328125,-256.3564147949219,60.692543029785156)
+      end)
+
+      Mainsection:NewButton("Thief King", "TP To Thief King)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(712.3245849609375,-20.0000057220459,201.687744140625)
+      end)
+
+      Mainsection:NewButton("Archmage", "TP To Archmage)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(395.7848205566406,-92.0000228881836,-270.5993347167969)
+      end)
