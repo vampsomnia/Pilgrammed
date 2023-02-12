@@ -427,7 +427,7 @@ Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword
     local Mainsection = Main:NewSection("Bosses")
 
     Mainsection:NewButton("Big Iron", "TP To Big Iron Button)", function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(2447.100634735325,-14.500001907348633-3125.677734375)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(2447.100634735325,-14.500001907348633,-3125.677734375)
       end)
 
       Mainsection:NewButton("Granny", "TP To Granny)", function()
