@@ -59,31 +59,115 @@ Mainsection:NewButton("TP To Chests", "Tab To TP To Chest (Can't turn off becaus
 end)
 --Craft
 local Main = Window:NewTab("Craft")
-local Mainsection = Main:NewSection("Ores")
+local Mainsection = Main:NewSection("Bronze Items")
 
-    Mainsection:NewToggle("Buy Bronze (2 copper 1 tin)", "Buys copper", function(state)
-  if state then
-       _G.autoTap = true
-      while _G.autoTap == true do
+Mainsection:NewButton("Bronze (2 Copper 1 Tin)", "Makes Bronze", function()
         local args = {
           [1] = "Bronze"
       }
-      
+
       game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
-      
-       wait()
-    end
-  else
-    _G.autoTap = false
-    while _G.autoTap == true do
+    end)
+
+    Mainsection:NewButton("Bronze Sword (40 Gold 6 Bronze)", "Makes Bronze Sword", function()
       local args = {
-        [1] = "Bronze"
+        [1] = "Bronze Sword"
     }
-    
+
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
-    end
-   end
   end)
+
+  Mainsection:NewButton("Bronze Pickaxe (40 Gold 6 Bronze)", "Makes Bronze Pickaxe", function()
+    local args = {
+      [1] = "Bronze Pickaxe"
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+Mainsection:NewButton("Bronze Greatsword (80 Gold 9 Bronze)", "Makes Bronze Greatsword", function()
+  local args = {
+    [1] = "Bronze Greatsword"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+local Mainsection = Main:NewSection("Iron Items")
+
+Mainsection:NewButton("Iron Sword (200 Gold 8 Iron)", "Makes Iron Sword", function()
+  local args = {
+    [1] = "Iron Sword"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+Mainsection:NewButton("Iron Pickaxe (200 Gold 8 Iron)", "Makes Iron Pickaxe", function()
+  local args = {
+    [1] = "Iron Pickaxe"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+Mainsection:NewButton("Iron Greatsword (300 Gold 12 Iron)", "Makes Iron Greatsword", function()
+  local args = {
+    [1] = "Iron Greatsword"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+Mainsection:NewButton("Iron Spear (200 Gold 10 Iron)", "Makes Iron Spear", function()
+  local args = {
+    [1] = "Iron Spear"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+Mainsection:NewButton("Iron Battleaxe (300 Gold 10 Iron)", "Makes Iron Battleaxe", function()
+  local args = {
+    [1] = "Iron Battleaxe "
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+local Mainsection = Main:NewSection("Demetal Items")
+
+Mainsection:NewButton("Demetal Sword (400 Gold 6 Demetal)", "Makes Demetal Sword", function()
+  local args = {
+    [1] = "Demetal Sword "
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+Mainsection:NewButton("Demetal Maul (450 Gold 10 Demetal)", "Makes Demetal Maul", function()
+  local args = {
+    [1] = "Demetal Maul "
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+Mainsection:NewButton("Demetal Greatbow (500 Gold 12 Demetal 8 Sulfur)", "Makes Demetal Greatbow", function()
+  local args = {
+    [1] = "Demetal Greatbow "
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
+
+Mainsection:NewButton("Demetal Bullets (400 Gold 4 Demetal 1 Fiery Stone)", "Makes Demetal Bullets", function()
+  local args = {
+    [1] = "Demetal Bullets "
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+end)
 
   --mirror
   local Main = Window:NewTab("Mirrors")
