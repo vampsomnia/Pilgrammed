@@ -153,14 +153,6 @@ Mainsection:NewButton("Demetal Maul (450 Gold 10 Demetal)", "Makes Demetal Maul"
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end)
 
-Mainsection:NewButton("Demetal Greatbow (500 Gold 12 Demetal 8 Sulfur)", "Makes Demetal Greatbow", function()
-  local args = {
-    [1] = "Demetal Greatbow "
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
-end)
-
 Mainsection:NewButton("Demetal Bullets (400 Gold 4 Demetal 1 Fiery Stone)", "Makes Demetal Bullets", function()
   local args = {
     [1] = "Demetal Bullets "
@@ -168,6 +160,182 @@ Mainsection:NewButton("Demetal Bullets (400 Gold 4 Demetal 1 Fiery Stone)", "Mak
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
 end)
+
+local Mainsection = Main:NewSection("Mithril Items")
+
+Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword", function()
+    local args = {
+      [1] = "Mithril Sword "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Mithril Spear (450 Gold 10 Mithril)", "Makes Mithril Spear", function()
+    local args = {
+      [1] = "Mithril Spear "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+--Guns
+  local Main = Window:NewTab("Guns")
+  local Mainsection = Main:NewSection("Buyable Guns")
+
+  Mainsection:NewButton("Six Shooter ", "1000 Gold 1 Flintlock 1 Gunpowder 5 Iron", function()
+    local args = {
+      [1] = "Six Shooter "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Cannon ", "1000 Gold 1 Blundervyss 1 Gunpowder 1 Demetal Bullets", function()
+    local args = {
+      [1] = "Cannon "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Air Gun ", "600 Gold 1 Bluderbuss 1 Air Powder 12 Brass ", function()
+    local args = {
+      [1] = "Air Gun "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Squid Blaster ", "1000 Gold 1 Revolver 1 Mini Squid 1 Volatile Oil ", function()
+    local args = {
+      [1] = "Squid Blaster "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Blunderbuss ", "600 Gold 8 Brass 8 Iron 12 Sulfur", function()
+    local args = {
+      [1] = "Blunderbuss "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+--Bows
+
+  local Main = Window:NewTab("Bows")
+  local Mainsection = Main:NewSection("Buyable Bows")
+
+  Mainsection:NewButton("Wooden Bow ", "100 Gold ", function()
+    local args = {
+      [1] = "Wooden Bow "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Demetal Greatbow ", "500 Gold 12 Demetal 8 Sulfur ", function()
+    local args = {
+      [1] = "Demetal Greatbow "
+  }
+
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  --ranged amo
+  local Main = Window:NewTab("Ranged Ammo")
+  local Mainsection = Main:NewSection("Arrows")
+
+  Mainsection:NewButton("Regular Arrows x20 ", "5 Gold", function()
+    local args = {
+      [1] = "Arrow "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Fire Arrows x25 ", "25 Arrow 1 Demetal 1 Magma Slime", function()
+    local args = {
+      [1] = "Fire Arrow "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Flare Arrows x10 ", "10 Fire Arrow 4 Magma 1 Slime", function()
+    local args = {
+      [1] = "Flare Arrow "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Ice Arrows x25 ", "25 Arrow 1 Mithril", function()
+    local args = {
+      [1] = "Ice Arrow "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Scrap Arrows x10 ", "10 Arrow 1 Scrap Metal", function()
+    local args = {
+      [1] = "Scrap Arrow "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Shock Arrows x10 ", "10 Arrow 1 Copper", function()
+    local args = {
+      [1] = "Shock Arrow "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Explosive Arrows x5 ", "5 Fire Arrow 1 Sulfur", function()
+    local args = {
+      [1] = "Explosive Arrow "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Piercing Bullets ", "150 Gold 8 Iron 4 Sulfur", function()
+    local args = {
+      [1] = "Piercing Bullets "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Pistol Pop Pellets ", "250 Gold 1 Gunpowder 10 Limes 10 Scrap ", function()
+    local args = {
+      [1] = "Pistol Pop Pellets "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Demetal Bullets ", "400 Gold 4 Demetal 7 Fiery Stone ", function()
+    local args = {
+      [1] = "Demetal Bullets "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+  Mainsection:NewButton("Venom Bullets ", "1500 Gold 1 Piercing Bullets 1 Venom Gland ", function()
+    local args = {
+      [1] = "Demetal Bullets "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
+
+
 
   --mirror
   local Main = Window:NewTab("Mirrors")
@@ -220,3 +388,21 @@ end)
     Mainsection:NewButton("Observatory Mirror TP", "TP To Mirror)", function()
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-2528.82373046875,58.94717788696289,-2871.49365234375)
     end)
+
+    --Old Fart
+
+    local Main = Window:NewTab("Old Fart Buttons")
+    local Mainsection = Main:NewSection("Buttons")
+
+    Mainsection:NewButton("Old Fart Button #1", "TP To Old Fart Button)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-958.1309204101562,15.141385078430176,-1646.38330078125)
+      end)
+
+    Mainsection:NewButton("Old Fart Button #2", "TP To Old Fart Button)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(4162.52978515625,-24.46598243713379,-1177.4771728515625)
+      end)
+
+      Mainsection:NewButton("Old Fart Button #3", "TP To Old Fart Button)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1400.0072021484375,836.6737670898438,4292.0546875)
+      end)
+
