@@ -84,3 +84,55 @@ local Mainsection = Main:NewSection("Ores")
     end
    end
   end)
+
+  --mirror
+  local Main = Window:NewTab("Mirrors")
+  local Mainsection = Main:NewSection("Mirrors")
+
+  Mainsection:NewButton("Desert Mirror TP", "TP To Mirror)", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(Vector3.new(918.79443359375,133.9999542236328,-2624.743896484375))
+    end)
+
+    Mainsection:NewButton("Plains Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(Vector3.new(859.3885498046875,9.000027656555176,-364.5342712402344))
+    end)
+
+    Mainsection:NewButton("Volcano Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(Vector3.new(1150.7587890625,160.999996948242188,-3886.590576171875))
+    end)
+
+    Mainsection:NewButton("Mountain Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(Vector3.new(1259.353515625,262.9999084472656,105.18193054199219))
+    end)
+
+    Mainsection:NewButton("Cloud Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(Vector3.new(679.8447265625,553.3715209960938,2325.120849609375))
+    end)
+
+    Mainsection:NewButton("Savannah Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1752.376220703125,24.141382217407227,-1303.8511962890625)
+    end)
+
+    Mainsection:NewButton("Swamp Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(544.02783203125,33.14137649536133,-1692.1329345703125)
+    end)
+
+    Mainsection:NewButton("Forgotten Village Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(5618.1298828125,-196.79844665527344,2086.739013671875)
+    end)
+
+    Mainsection:NewButton("Condemned Passage Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(4744.55810546875,-387.994140625,1153.5384521484375)
+    end)
+
+    Mainsection:NewButton("Forest", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-203.2915496826172,132.815673828125,-768.7633056640625)
+    end)
+
+    Mainsection:NewButton("Big Bay Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(2038.7745361328125,-20.415746688842773,-904.406004849375)
+    end)
+    
+    Mainsection:NewButton("Observatory Mirror TP", "TP To Mirror)", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-2528.82373046875,58.94717788696289,-2871.49365234375)
+    end)
