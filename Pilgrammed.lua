@@ -329,13 +329,19 @@ Mainsection:NewButton("Mithril Sword (400 Gold 6 Mithril)", "Makes Mithril Sword
 
   Mainsection:NewButton("Venom Bullets ", "1500 Gold 1 Piercing Bullets 1 Venom Gland ", function()
     local args = {
-      [1] = "Demetal Bullets "
+      [1] = "Venom Bullets "
   }
   
   game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
   end)
 
-
+  Mainsection:NewButton("Mana Bullets ", "1000 Gold 1 Piercing Bullets 25 Arcane Essence ", function()
+    local args = {
+      [1] = "Mana Bullets "
+  }
+  
+  game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Buy"):InvokeServer(unpack(args))
+  end)
 
   --mirror
   local Main = Window:NewTab("Mirrors")
