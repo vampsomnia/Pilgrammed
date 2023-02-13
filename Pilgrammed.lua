@@ -453,4 +453,8 @@ local Page = Tab:CreateFrame("Boss Teleport")
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1913.7789306640625-10.85861396785508,-1384.8013916015625)
       end)
 
+      Button = Page:CreateButton("Viperhead", "Snakey boy)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(481.1592712402344,-100.0000228881836,-2351.052979515625)
+      end)
+
     end)
