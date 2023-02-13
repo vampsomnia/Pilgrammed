@@ -5,7 +5,7 @@ local Window = library:CreateWindow("vamp hub", "1.0", 10044538000)
   local Tab = Window:CreateTab("Main")
   local Page = Tab:CreateFrame("Auto")
 
-  Toggle = Page:CreateToggle("Auto Deposit", "Auto Deposits Gold", function(state)
+  Toggle = Page:CreateToggle("Auto Deposit", "Auto Deposits Gold ", function(state)
 if state then
      _G.autoTap = true
     while _G.autoTap == true do
@@ -214,7 +214,7 @@ Button = Page:CreateButton("Wooden Bow ", "100 Gold ", function()
 
   local Page = Tab:CreateFrame("Pickaxe")
 
-  Button = Page:CreateButton("Bronze Pickaxe ", "40 Gold 6 Bronze ", function()
+  Button = Page:CreateButton("Bronze Pickaxe ", "40 Gold 6 Bronze (Click To Load Full Menu Deposit All Gold) ", function()
 
 local args = {
     [1] = "Bronze Pickaxe"
@@ -432,4 +432,25 @@ local Page = Tab:CreateFrame("Boss Teleport")
       Button = Page:CreateButton("Big Ass Slime", "TP To Big Slime Thingy)", function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(395.7848205566406,-92.0000228881836,-270.5993347167969)
       end)
+
+      Button = Page:CreateButton("Archmage", "Rogue Lineage Dev So Real)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-965.8036499023439,74.9999771118164,1734.494140625)
+      end)
+
+      Button = Page:CreateButton("Patris", "Fucking Dog)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-3126.954833984375,-21.224761962890625,-4385.7275390625)
+      end)
+
+      Button = Page:CreateButton("King Sandpod", "Big Bug)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(159.18002319335938,-24.0000057220459,-2206.61669921875)
+      end)
+
+      Button = Page:CreateButton("The Skeleton", "Never Spawns)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-217.2537689208944,-26.57724380493164,-4360.38427734375)
+      end)
+
+      Button = Page:CreateButton("Sailord", "Goodluck..)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1913.7789306640625-10.85861396785508,-1384.8013916015625)
+      end)
+
     end)
