@@ -457,4 +457,34 @@ local Page = Tab:CreateFrame("Boss Teleport")
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(481.1592712402344,-100.0000228881836,-2351.052979515625)
       end)
 
+      Button = Page:CreateButton("Highway Son", "Gold Chest Dude)", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(2206.62548828125,545.5737915039062,3412.2109375)
+      end)
+
+    end)
+
+    local Page = Tab:CreateFrame("NPC's")
+
+    Button = Page:CreateButton("Kai ", "Kai Fist )", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1709.08984375,183.499542236328,219.2947998046875)
+    end)
+
+    Button = Page:CreateButton("Liar ", "Liar Armor 2500 Gold )", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(445.7032470703125,352.9742431640625,334.9214782714844)
+    end)
+
+    Button = Page:CreateButton("The Duke of Rocks ", "Rockwondo )", function() 
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1563.510009765625,700.446044921875,123.10670471191406)
+    end)
+
+    Button = Page:CreateButton("Hobo ", "Kod Kendo )", function() 
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-241.12254333496094,-10.154948234558105,-352.591552734375)
+    end)
+
+    Button = Page:CreateButton("Simon ", "Makes You A Vampire )", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(2788.538818359375,-20.52554702748789,-2134.41015625)
+    end)
+
+    Button = Page:CreateButton("Gelician ", "Makes You A Frost Imp )", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1255.419921875,-18.92557716369629,2071.89453125)
     end)
