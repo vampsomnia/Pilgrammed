@@ -492,6 +492,14 @@ local Page = Tab:CreateFrame("Boss Teleport")
       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(1255.419921875,-18.92557716369629,2071.89453125)
     end)
 
+    Button = Page:CreateButton("Creeper Reaper ", "Resets Your Race ", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-45.10213851928711,100.22705841064453,-1149.5391845703125)
+    end)
+
+    Button = Page:CreateButton("Mega Death ", "Rebirth ", function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=   CFrame.new(-2013.121826171875,77.4999771118164,-5144.20703125)
+    end)
+
     local Page = Tab:CreateFrame("Armors")
 
     Button = Page:CreateButton("Wanderer ", "50 Gold ", function()
